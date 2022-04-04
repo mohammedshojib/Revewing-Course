@@ -7,7 +7,7 @@ const Notfound = () => {
   return (
     <div className="qanda not-found">
       <h4>404 Not Found</h4>
-      <img src={notFound} alt="" />
+      <img src={notFound} alt="not found" />
       <br />
       <button className="btn-primary" onClick={() => navigate("/")}>
         Go Back To Home
