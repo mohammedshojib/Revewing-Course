@@ -1,0 +1,42 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: auto;
+}
+.row-main {
+  text-align: center;
+}
+.btn-primary {
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffad5a;
+  text-align: center;
+  padding: 10px 50px;
+}
+.btn-primary:hover {
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+
+  border-radius: 10px;
+  border: none;
+  background-color: #f58311;
+  text-align: center;
+  padding: 10px 50px;
+}
+.btn {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+}

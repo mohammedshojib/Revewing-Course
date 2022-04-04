@@ -6,12 +6,12 @@ const Hero = () => {
     <div className="hero">
       <div className="col">
         <h3>
-          Hy! I Am <br /> <span>SHOJIB</span>
+          Hy! Reviewing <br /> <span>Jhankars Course</span>
         </h3>
         <p>
-          I am a programing <b>Learner</b>. Recently i stared with programing
-          hero with-out any coding knowleged i am 19years old virgin boy with a
-          2010 model laptop
+          We are review web development course for you. We aks every people what
+          they think how thare experience with <b>Jhankers</b> web development
+          course
         </p>
         <a href="#">Explore More</a>
       </div>

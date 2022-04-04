@@ -29,6 +29,12 @@ const Header = () => {
           >
             Dashboard
           </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "non-active")}
+            to="/q&a"
+          >
+            Q & A
+          </NavLink>
         </div>
       </div>
     </>
