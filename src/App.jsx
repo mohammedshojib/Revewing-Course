@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
@@ -13,6 +13,12 @@ export const ReviewsContext = createContext();
 
 function App() {
   const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetch("reviewData.json")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
   return (
     <div className="App">
       <ReviewsContext.Provider value={[reviews, setReviews]}>

@@ -8,13 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-  const [reviews, setReviews] = useContext(ReviewsContext);
-
-  useEffect(() => {
-    fetch("reviewData.json")
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
+  const [reviews] = useContext(ReviewsContext);
 
   const sliceDtata = reviews.slice(0, 3);
   return (
